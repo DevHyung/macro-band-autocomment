@@ -1,7 +1,9 @@
+#facebook login vers
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from CONFIG import *
 import time
+
 
 if __name__ == "__main__":
     print("_______________________________________________")
@@ -10,9 +12,15 @@ if __name__ == "__main__":
     ###
     dir = './chromedriver'
     prev_article = -1
-    keyword = ['DCF','코이']
-    type = "AND"
-    reple = "저요"
+    f = open("option.txt", 'r')
+    option = f.readlines()
+    keyword = option[2].strip().split(',')
+    type = option[6].strip()
+    BAND_URL = option[10].strip()
+    reple = option[14].strip()
+    cycle = float(option[18].strip())
+    BAND_ID = option[22].strip()
+    BAND_PW = option[26].strip()
     ###
     driver = webdriver.Chrome(dir)
     #Login
@@ -28,7 +36,7 @@ if __name__ == "__main__":
     time.sleep(3)
     print(">>> 감시중")
     while True:
-        time.sleep(3)
+        time.sleep(cycle)
         bs4 = BeautifulSoup(driver.page_source,'lxml')
         postlist = bs4.find("a",class_="gSrOnly")['href']
         #print("마지막: ",postlist['href'])
@@ -53,6 +61,7 @@ if __name__ == "__main__":
                         driver.find_element_by_xpath('//*[@id="content"]/div/section/div/div/div[5]/div[2]/div/div/div[4]/button').click()
                         driver.get(BAND_URL)
                         print("\t\t>>> find keyword !!!!!!!! ")
+                        print("\t\t>>> https://band.us"+postlist)
                         break
             else:
                 flag = True
@@ -72,4 +81,5 @@ if __name__ == "__main__":
                         '//*[@id="content"]/div/section/div/div/div[5]/div[2]/div/div/div[4]/button').click()
                     driver.get(BAND_URL)
                     print("\t\t>>> find keyword !!!!!!!! ")
+                    print("\t\t>>> https://band.us" + postlist)
         driver.refresh()

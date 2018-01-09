@@ -63,6 +63,7 @@ if __name__ == "__main__":
                             driver.find_element_by_xpath('//*[@id="content"]/div/section/div/div/div[5]/div[2]/div/div/div[4]/button').click()
                             driver.get(BAND_URL)
                             print("\t\t>>> find keyword !!!!!!!! ")
+                            print("\t\t>>> https://band.us" + postlist)
                             break
                 else:
                     flag = True
@@ -82,6 +83,7 @@ if __name__ == "__main__":
                             '//*[@id="content"]/div/section/div/div/div[5]/div[2]/div/div/div[4]/button').click()
                         driver.get(BAND_URL)
                         print("\t\t>>> find keyword !!!!!!!! ")
+                        print("\t\t>>> https://band.us" + postlist)
             driver.refresh()
         except:
             print("\t>>> 네트워크 지연가능성 있음 확인필요")

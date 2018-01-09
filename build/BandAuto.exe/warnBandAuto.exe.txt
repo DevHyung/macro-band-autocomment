@@ -1,0 +1,32 @@
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, /Users/phj/Desktop/band/BandAuto.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, /Users/phj/Desktop/band/BandAuto.py
+missing module named _winreg - imported by platform, selenium.webdriver.firefox.firefox_binary, /Users/phj/Desktop/band/BandAuto.py
+missing module named java - imported by platform, /Users/phj/Desktop/band/BandAuto.py
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions, /Users/phj/Desktop/band/BandAuto.py
+missing module named vms_lib - imported by platform, /Users/phj/Desktop/band/BandAuto.py
+missing module named msvcrt - imported by subprocess, getpass, /Users/phj/Desktop/band/BandAuto.py
+missing module named _winapi - imported by subprocess, /Users/phj/Desktop/band/BandAuto.py
+missing module named winreg - imported by platform, mimetypes, urllib.request, selenium.webdriver.firefox.firefox_binary, /Users/phj/Desktop/band/BandAuto.py
+missing module named _dummy_threading - imported by dummy_threading, /Users/phj/Desktop/band/BandAuto.py
+missing module named nt - imported by os, ntpath, shutil, /Users/phj/Desktop/band/BandAuto.py
+missing module named org - imported by pickle, /Users/phj/Desktop/band/BandAuto.py
+missing module named 'org.python' - imported by copy, xml.sax, /Users/phj/Desktop/band/BandAuto.py
+missing module named iconv_codec - imported by bs4.dammit
+missing module named chardet - imported by bs4.dammit
+missing module named cchardet - imported by bs4.dammit
+missing module named html5lib.treebuilders.base - imported by html5lib.treebuilders, bs4.builder._html5lib
+missing module named StringIO - imported by selenium.webdriver.remote.webelement, six
+missing module named ordereddict - imported by html5lib.treewalkers.etree, html5lib.filters.alphabeticalattributes
+runtime module named six.moves - imported by html5lib.inputstream, html5lib.sanitizer
+missing module named 'genshi.core' - imported by html5lib.treewalkers.genshistream
+missing module named genshi - imported by html5lib.treewalkers.genshistream
+missing module named datrie - imported by html5lib.trie.datrie
+missing module named 'chardet.universaldetector' - imported by html5lib.inputstream
+missing module named charade - imported by html5lib.inputstream
+missing module named urllib2 - imported by selenium.webdriver.common.utils, selenium.webdriver.remote.remote_connection, selenium.webdriver.common.service
+missing module named netbios - imported by uuid
+missing module named win32wnet - imported by uuid
+missing module named urlparse - imported by selenium.webdriver.remote.remote_connection
+missing module named httplib - imported by selenium.webdriver.firefox.webdriver, selenium.webdriver.remote.remote_connection, selenium.webdriver.safari.webdriver, selenium.webdriver.blackberry.webdriver, selenium.webdriver.webkitgtk.webdriver
+missing module named cStringIO - imported by selenium.webdriver.firefox.firefox_profile
+missing module named copy_reg - imported by cStringIO
