@@ -26,11 +26,13 @@ if __name__ == "__main__":
     #Login
     driver.get("https://band.us/home")
     print(">>> Login ... ",end='')
-
     driver.find_element_by_xpath('//*[@id="header"]/div/div/div/a[3]').click()
     driver.find_element_by_xpath('//*[@id="login_list"]/li[1]/a').click()
+    time.sleep(2)
     driver.find_element_by_xpath('//*[@id="input_local_phone_number"]').send_keys(BAND_ID)
+    time.sleep(2)
     driver.find_element_by_xpath('//*[@id="input_password"]').send_keys(BAND_PW)
+    time.sleep(2)
     driver.find_element_by_xpath('//*[@id="phone_login_form"]/button').click()
     driver.get(BAND_URL)
     print("  Success !")
